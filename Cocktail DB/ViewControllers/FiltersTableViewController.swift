@@ -40,8 +40,12 @@ class FiltersTableViewController: UITableViewController {
         return 60
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (currentCategoryList?.category.count ?? 1) - 1 == 0 {
+            if currentCategoryList?.category.first == categoryList?.category[indexPath.row]{
+                return
+            }
+        }
             let cell = tableView.cellForRow(at: indexPath) as? FiltersTableViewCell
-        
             if cell?.checkImageView.isHidden ?? false {
                 let category = categoryList?.category[indexPath.row] ?? ""
                 currentCategoryList?.category.append(category)
