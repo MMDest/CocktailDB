@@ -8,10 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DrinksViewController: UIViewController {
+
+    @IBOutlet weak var drinksLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        drinksLabel.text = "Drinks"
         // Do any additional setup after loading the view.
     }
 

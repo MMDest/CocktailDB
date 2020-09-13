@@ -3,14 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4430DF29250E0794000E7173 /* DrinksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4430DF28250E0794000E7173 /* DrinksTableViewCell.swift */; };
 		44339E94250BBE030001300E /* FiltersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44339E93250BBE030001300E /* FiltersTableViewController.swift */; };
+		4433AD6F250D82DF00FBF9ED /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4433AD6E250D82DF00FBF9ED /* Network.swift */; };
+		4433AD71250D830D00FBF9ED /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4433AD70250D830D00FBF9ED /* NetworkError.swift */; };
+		4433AD74250D83D500FBF9ED /* CategoriesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4433AD73250D83D500FBF9ED /* CategoriesManager.swift */; };
+		4433AD76250D843500FBF9ED /* CategoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4433AD75250D843500FBF9ED /* CategoriesProtocol.swift */; };
+		44B51B60250BE047006524AE /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44B51B5F250BE03E006524AE /* Roboto-Black.ttf */; };
+		44B51B62250C0254006524AE /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44B51B61250C0252006524AE /* Roboto-Medium.ttf */; };
+		44CC673D250D94A400F4E0EE /* FiltersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CC673C250D94A400F4E0EE /* FiltersTableViewCell.swift */; };
 		44FA0D79250B5E60001B7EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA0D78250B5E60001B7EF9 /* AppDelegate.swift */; };
 		44FA0D7B250B5E60001B7EF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA0D7A250B5E60001B7EF9 /* SceneDelegate.swift */; };
-		44FA0D7D250B5E60001B7EF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA0D7C250B5E60001B7EF9 /* ViewController.swift */; };
+		44FA0D7D250B5E60001B7EF9 /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA0D7C250B5E60001B7EF9 /* DrinksViewController.swift */; };
 		44FA0D80250B5E60001B7EF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FA0D7E250B5E60001B7EF9 /* Main.storyboard */; };
 		44FA0D82250B5E6A001B7EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FA0D81250B5E6A001B7EF9 /* Assets.xcassets */; };
 		44FA0D85250B5E6A001B7EF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FA0D83250B5E6A001B7EF9 /* LaunchScreen.storyboard */; };
@@ -19,11 +27,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4430DF28250E0794000E7173 /* DrinksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksTableViewCell.swift; sourceTree = "<group>"; };
 		44339E93250BBE030001300E /* FiltersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersTableViewController.swift; sourceTree = "<group>"; };
+		4433AD6E250D82DF00FBF9ED /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		4433AD70250D830D00FBF9ED /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4433AD73250D83D500FBF9ED /* CategoriesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesManager.swift; sourceTree = "<group>"; };
+		4433AD75250D843500FBF9ED /* CategoriesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesProtocol.swift; sourceTree = "<group>"; };
+		44B51B5F250BE03E006524AE /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "Cocktail DB/Roboto-Black.ttf"; sourceTree = SOURCE_ROOT; };
+		44B51B61250C0252006524AE /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		44CC673C250D94A400F4E0EE /* FiltersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersTableViewCell.swift; sourceTree = "<group>"; };
 		44FA0D75250B5E60001B7EF9 /* Cocktail DB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cocktail DB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FA0D78250B5E60001B7EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44FA0D7A250B5E60001B7EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44FA0D7C250B5E60001B7EF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44FA0D7C250B5E60001B7EF9 /* DrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
 		44FA0D7F250B5E60001B7EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44FA0D81250B5E6A001B7EF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44FA0D84250B5E6A001B7EF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +59,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4433AD6D250D824D00FBF9ED /* Networing */ = {
+			isa = PBXGroup;
+			children = (
+				4433AD6E250D82DF00FBF9ED /* Network.swift */,
+				4433AD70250D830D00FBF9ED /* NetworkError.swift */,
+				4433AD75250D843500FBF9ED /* CategoriesProtocol.swift */,
+			);
+			path = Networing;
+			sourceTree = "<group>";
+		};
+		4433AD72250D835A00FBF9ED /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4433AD73250D83D500FBF9ED /* CategoriesManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		44B51B5E250BDF9F006524AE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				44B51B5F250BE03E006524AE /* Roboto-Black.ttf */,
+				44B51B61250C0252006524AE /* Roboto-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		44FA0D6C250B5E5F001B7EF9 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +105,9 @@
 		44FA0D77250B5E60001B7EF9 /* Cocktail DB */ = {
 			isa = PBXGroup;
 			children = (
+				4433AD72250D835A00FBF9ED /* Managers */,
+				4433AD6D250D824D00FBF9ED /* Networing */,
+				44B51B5E250BDF9F006524AE /* Fonts */,
 				44FA0D8E250B5ECF001B7EF9 /* Model */,
 				44FA0D8D250B5EC0001B7EF9 /* View */,
 				44FA0D8C250B5EA3001B7EF9 /* ViewControllers */,
@@ -78,7 +124,7 @@
 		44FA0D8C250B5EA3001B7EF9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				44FA0D7C250B5E60001B7EF9 /* ViewController.swift */,
+				44FA0D7C250B5E60001B7EF9 /* DrinksViewController.swift */,
 				44339E93250BBE030001300E /* FiltersTableViewController.swift */,
 			);
 			path = ViewControllers;
@@ -87,6 +133,8 @@
 		44FA0D8D250B5EC0001B7EF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44CC673C250D94A400F4E0EE /* FiltersTableViewCell.swift */,
+				4430DF28250E0794000E7173 /* DrinksTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,7 +184,7 @@
 				};
 			};
 			buildConfigurationList = 44FA0D70250B5E5F001B7EF9 /* Build configuration list for PBXProject "Cocktail DB" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -158,9 +206,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44B51B62250C0254006524AE /* Roboto-Medium.ttf in Resources */,
 				44FA0D85250B5E6A001B7EF9 /* LaunchScreen.storyboard in Resources */,
 				44FA0D82250B5E6A001B7EF9 /* Assets.xcassets in Resources */,
 				44FA0D80250B5E60001B7EF9 /* Main.storyboard in Resources */,
+				44B51B60250BE047006524AE /* Roboto-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,11 +222,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				44339E94250BBE030001300E /* FiltersTableViewController.swift in Sources */,
+				4433AD71250D830D00FBF9ED /* NetworkError.swift in Sources */,
+				4430DF29250E0794000E7173 /* DrinksTableViewCell.swift in Sources */,
+				4433AD74250D83D500FBF9ED /* CategoriesManager.swift in Sources */,
 				44FA0D92250B5FC0001B7EF9 /* Drinks.swift in Sources */,
-				44FA0D7D250B5E60001B7EF9 /* ViewController.swift in Sources */,
+				44FA0D7D250B5E60001B7EF9 /* DrinksViewController.swift in Sources */,
 				44FA0D90250B5F26001B7EF9 /* CocktailCategorys.swift in Sources */,
 				44FA0D79250B5E60001B7EF9 /* AppDelegate.swift in Sources */,
+				4433AD76250D843500FBF9ED /* CategoriesProtocol.swift in Sources */,
+				4433AD6F250D82DF00FBF9ED /* Network.swift in Sources */,
 				44FA0D7B250B5E60001B7EF9 /* SceneDelegate.swift in Sources */,
+				44CC673D250D94A400F4E0EE /* FiltersTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +366,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -321,7 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MBDS2J6XR8;
+				DEVELOPMENT_TEAM = P8JA7643K4;
 				INFOPLIST_FILE = "Cocktail DB/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -330,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mdest.Cocktail-DB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -339,7 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MBDS2J6XR8;
+				DEVELOPMENT_TEAM = P8JA7643K4;
 				INFOPLIST_FILE = "Cocktail DB/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -348,7 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "mdest.Cocktail-DB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
