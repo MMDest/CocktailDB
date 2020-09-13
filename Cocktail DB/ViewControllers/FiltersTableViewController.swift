@@ -16,8 +16,6 @@ class FiltersTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
         self.tableView.separatorStyle = .none
         filtersLabel.text = "Filters"
         self.networkManager.getCategories { (categories) in
