@@ -23,11 +23,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H3V-xv-bGb">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H3V-xv-bGb">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="drinksCell" rowHeight="140" id="CCb-VT-KFi" customClass="DrinksTableViewCell" customModule="Cocktail_DB" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="drinksCell" rowHeight="140" id="CCb-VT-KFi" customClass="DrinksTableViewCell" customModule="Cocktail_DB" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CCb-VT-KFi" id="Xhz-lx-MyU">
@@ -42,9 +42,9 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qG-xk-U5f">
-                                                    <rect key="frame" x="141" y="59.5" width="253" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="141" y="61" width="253" height="18"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                                    <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -59,7 +59,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="DrinksImageView" destination="Ril-VB-Om7" id="UAZ-mI-xJz"/>
-                                            <outlet property="DrinksNameLanguage" destination="1qG-xk-U5f" id="j9I-gv-yjB"/>
+                                            <outlet property="drinksNameLabel" destination="1qG-xk-U5f" id="Q77-XA-qAh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -81,7 +81,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfm-HF-nJF">
-                                        <rect key="frame" x="10" y="0.0" width="82" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="33"/>
                                         <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -89,21 +89,21 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Nfm-HF-nJF" secondAttribute="bottom" id="9tV-pH-ZqN"/>
-                                    <constraint firstItem="Nfm-HF-nJF" firstAttribute="leading" secondItem="tx1-Hj-dbK" secondAttribute="leading" constant="10" id="S5G-2p-4sS"/>
+                                    <constraint firstItem="Nfm-HF-nJF" firstAttribute="leading" secondItem="tx1-Hj-dbK" secondAttribute="leading" id="S5G-2p-4sS"/>
                                     <constraint firstItem="Nfm-HF-nJF" firstAttribute="top" secondItem="tx1-Hj-dbK" secondAttribute="top" id="XqL-mN-ufD"/>
                                     <constraint firstAttribute="trailing" secondItem="Nfm-HF-nJF" secondAttribute="trailing" id="Ysw-m2-r2M"/>
                                 </constraints>
                             </view>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="Filters" id="FOG-VD-Wd4">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="2Vz-Hn-2uh" kind="show" id="AG1-9t-A6p"/>
+                                <segue destination="2Vz-Hn-2uh" kind="show" identifier="filtersSeque" id="AG1-9t-A6p"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="drinksLabel" destination="Nfm-HF-nJF" id="tdU-7u-rJs"/>
+                        <outlet property="tableView" destination="H3V-xv-bGb" id="hID-vF-YKI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -168,7 +168,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="52" height="33"/>
                                         <state key="normal" image="Back"/>
                                         <connections>
-                                            <action selector="BackToDrinksViewController:" destination="2Vz-Hn-2uh" eventType="touchUpInside" id="pSa-tJ-iBf"/>
+                                            <action selector="BackToDrinksViewController:" destination="2Vz-Hn-2uh" eventType="touchUpInside" id="P99-QJ-k4n"/>
+                                            <segue destination="nX5-ic-k5y" kind="unwind" unwindAction="didUnwindFromFiltersTableViewController:" id="eCh-7s-Kz8"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPN-dr-eKW">
@@ -195,6 +196,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cka-4e-vOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="nX5-ic-k5y" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1924.6376811594205" y="91.741071428571431"/>
         </scene>

@@ -18,12 +18,11 @@ class FiltersTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-//        isHidden = false
-//        isEditing = false
-//        isSelected = false
+
         // Configure the view for the selected state
     }
 

@@ -10,14 +10,21 @@ import UIKit
 
 class DrinksTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var DrinksImageView: UIImageView!
-    @IBOutlet weak var DrinksNameLanguage: UILabel!
+    @IBOutlet weak var drinksImageView: UIImageView!
+    @IBOutlet weak var drinksNameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    override func prepareForReuse() {
+              super.prepareForReuse()
+        isHidden = false
+        isEditing = false
+        isSelected = false
+        self.drinksImageView.image = nil
+        self.drinksNameLabel.text = nil
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
